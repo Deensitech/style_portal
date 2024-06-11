@@ -1,0 +1,73 @@
+.process-breadcrumb {
+  list-style: none;
+  padding-left: 0;
+  white-space: nowrap;
+  height: 46px;
+  width: 100%;
+  padding-right: 45px;
+  display: table; }
+.process-breadcrumb > li {
+  display: table-cell;
+  position: relative; }
+.process-breadcrumb > li > a {
+  display: block;
+  padding: 14px 15px 12px 38px;
+  transition: all 1s;
+  text-align: center; }
+.process-breadcrumb > li > a, .process-breadcrumb > li > a:visited, .process-breadcrumb > li > a:hover {
+  color: #2e2e2e;
+  text-decoration: none; }
+.process-breadcrumb > li:first-child > a {
+  padding-left: 15px; }
+.process-breadcrumb > li:last-child:after {
+  display: none; }
+.process-breadcrumb > li:after {
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 6px;
+  right: -18px;
+  border-top: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+  background-color: transparent;
+  content: ' ';
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+.process-breadcrumb > li.active > a:before, .process-breadcrumb > li > a:hover:before {
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+  right: -3px;
+  top: auto;
+  height: 3px;
+  background-color: #1f8476;
+  display: inline-block;
+  content: ' ';
+  transform: skewX(-45deg); }
+.process-breadcrumb > li.disabled > a, .process-breadcrumb > li.disabled > a:visited, .process-breadcrumb > li.disabled > a:hover {
+  border-bottom-color: transparent;
+  cursor: default; }
+.process-breadcrumb > li.disabled > a:before, .process-breadcrumb > li.disabled > a:visited:before, .process-breadcrumb > li.disabled > a:hover:before {
+  display: none; }
+.process-breadcrumb > li.completed > a:after {
+  font-family: "retina_icons";
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  color: #1f8476;
+  vertical-align: text-bottom;
+  margin-left: 5px; }
+.process-breadcrumb.process-breadcrumb-border {
+  border: 1px solid #cbcbcb; }
